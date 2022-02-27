@@ -1,0 +1,504 @@
+/*-----Изделия для авиации-------*/
+main.products{
+    display: block;
+}
+.products .main-slide > p{
+  font-size: 19px;
+}
+.products table{
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+td,th{
+    border: 1px solid black;
+}
+.products span{
+  font-size: 14px;
+}
+
+/*------------------------*/
+.products h2{
+    text-align: center;
+}
+.glasses,.helicopter, .night_vision, .filters{
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+.sidebar_glasses, .sidebar_helicopter, .sidebar_night_vision, .sidebar_filters{
+  height: 100%;
+}
+.sidebar_filters, .sidebar_helicopter{
+  background: linear-gradient(0deg, rgb(187, 159, 135) 40%, rgb(56, 70, 97));
+}
+.sidebar_night_vision, .sidebar_glasses{
+  background: linear-gradient(180deg, rgb(187, 159, 135) 40%, rgb(56, 70, 97));
+}
+
+.aviation_table{
+    margin: 30px 0 0 1vw;
+    max-width: 50vw;
+    height: 250px;
+    text-align: center;
+}
+.glasses li{
+  list-style:disc;
+  margin: 0 10px;
+
+}
+.night_vision{
+    font-size: 18px;
+    font-weight: 400;
+    overflow-y: hidden;
+}
+.sidebar{
+  text-align: center;
+}
+.sidebar img{
+  width: 250px;
+}
+.sidebar_filters img{
+  max-width: 300px;
+}
+.helicopter img{
+  max-width: 250px;
+  height: 200px;
+  margin: 20px 5px 0px 5px;
+}
+.helicopter{
+  width: 500px;
+  overflow-y: hidden;
+}
+.helicopter_img{
+  text-align: center;
+}
+.night_vision > section {
+  text-align: center;
+  margin: 35px;
+}
+.night_vision > section > img{
+  max-width: 450px;
+}
+.filters table{
+  max-width: 500px;
+  max-height: 300px;
+  margin: 10px 0 0 0px;
+  text-align: center;
+  font-size: 16px;
+}
+.filters_content{
+  display: flex;
+}
+.filters > section{
+  text-align: center;
+  margin: 0px;
+}
+.sidebar_helicopter section{
+  margin: -35vh 0 0px 0;
+  max-width: 500px;
+}
+.products .main-slide >div{
+  padding: 100px 0 0 60px;
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  overflow-y: hidden;
+}
+.filters img{
+  max-width: 400px;
+  margin: 150px 10px;
+  padding: 10px;
+  background-color: rgb(79, 86, 104);
+}
+
+
+/*--------Слайдер------------*/
+
+main.products{
+  padding: 0;
+  margin: 0;
+}
+  main.products div.container{
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left:0;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .sidebar > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .sidebar h1 {
+    font-size: 40px;
+    margin-bottom: 0px;
+    margin-top: -0px;
+  }
+  
+  .main-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .main-slide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #B39C85;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  button:hover {
+    color: #222;
+  }
+  
+  button:focus {
+    outline:none;
+  }
+  
+  .container .controls button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 5;
+    
+  }
+  
+  .container .controls .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .container .controls .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+  
+  /*----------Низкоуровневые системы-------------*/
+  
+  .lowlevel_systems .main-slide > div {
+    padding: 300px 0 0 60px;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+
+  .sidebar .system_avto,.sidebar  .system_uf,.sidebar  .system_low,.sidebar  .system_complex{
+    height: 100%;
+  }
+  .sidebar .system_avto,.sidebar  .system_low{
+    background: linear-gradient(180deg, rgb(187, 159, 135) 40%, rgb(56, 70, 97));
+  }
+  .sidebar  .system_uf,.sidebar .system_complex{
+    background: linear-gradient(0deg, rgb(187, 159, 135) 40%, rgb(56, 70, 97));
+  }
+
+  /*--------Инерциальные системы-----------*/
+  .inertial_systems .main-slide > div {
+    padding: 300px 0 0 60px;
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+  }
+
+  .main-slide .meter,.main-slide .cursovert,.main-slide .LED{
+    padding: 300px 0 0 60px;
+    background-color: rgb(255, 255, 255);
+    font-size: 24px;
+  }
+  .main-slide .DTP{
+    padding: 150px 0 0 60px;
+    background-color: rgb(255, 255, 255);
+    font-size: 24px;
+  }
+  .main-slide .meter > table{
+    margin: 30px 0 0 0;
+    font-size: 20px;
+    text-align: center;
+    width: 700px;
+  }
+  .DTP table{
+    max-width: 800px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .main-slide div.DTP{
+    padding-top: 100px ;
+  }
+
+  .sidebar .cursovert,.sidebar  .meter{
+    background: linear-gradient(180deg, rgb(187, 159, 135) 40%, rgb(56, 70, 97))
+  }
+  .sidebar  .LED,.sidebar .DTP{
+    background: linear-gradient(0deg, rgb(187, 159, 135) 40%, rgb(56, 70, 97));
+  }
+
+
+  /*------Элементарная база------*/
+  .element_base{
+    margin: 7vw 0 0px 0vw;
+  }
+  .element_base table{
+    max-width: 1200px;
+    margin: 50px 0 50px 10vw;
+    text-align: center;
+  }
+  .element_base h2{
+    font-size: 20px;
+    font-weight:500;
+    background-color: rgb(179, 156, 133);
+  }
+  .element_base_info{
+    display: flex;
+    margin: 0px 0 0 15vw;
+  }
+  
+  .element_base_info p{
+    margin: 20px 0 0 15vw;
+    max-width: 700px;
+    font-size: 20px;
+  }
+  /*-------Медицинская техника----------*/
+  .medical{
+    margin:90px 0 0 0;
+  }
+  .medical table{
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .medical h2{
+    font-size: 20px;
+    font-weight:500;
+    background-color: rgb(179, 156, 133);
+  }
+  .medical_img{
+    max-width: 60%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .medical p{
+    margin: 20px auto;
+    width: 80%;
+    font-size: 18px;
+  }
+  .medical_name{
+    font-weight: bolder;
+  }
+  /*-----Датчики-----*/
+  
+  .modern_system h2{
+    font-size: 20px;
+    font-weight:500;
+    background-color: rgb(179, 156, 133);
+    margin: 20px 0;
+  }
+  
+  .sensors, .h3{
+    margin:90px auto;
+    width: 90%;
+  }
+  .sensors_img, .module_img{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  div.h3{
+    display: flex;
+  }
+  .h3 p{
+    max-width: 400px;
+    margin: 0 12vw;
+    background-color: rgb(179, 156, 133);
+    text-align: center;
+    font-weight: bold;
+  }
+  /*-----Производственные мощности----*/
+  .capacity{
+    width: 95%;
+    margin: 90px auto;
+  }
+  .capacity h2{
+    font-size: 20px;
+    font-weight:500;
+    background-color: rgb(179, 156, 133);
+    margin: 20px 0;
+  }
+  .capacity_img{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .capacity img{
+    border: 5px solid rgb(255, 255, 255);
+  }
+  
+  /*----Мобильная адаптация------*/
+  @media (max-width:800px){
+    .products table, .aviation_table{
+      visibility: hidden;
+    }
+    main.products{
+      margin: 0px 0 0 0;
+    }
+    main.product h2{
+      text-align: center;
+    }
+    .helicopter_imgs, .filters img{
+      visibility: hidden;
+    }
+    .night_vision img{
+      width: 240px;
+    }
+    
+    .sidebar_glasses img, .sidebar_night_vision img, .sidebar_filters img{
+      width: 150px;
+    }
+    .sidebar h1{
+      font-size: 20px;
+    }
+    .lowlevel_systems .sidebar h1{
+      font-size: 16px;
+  }
+  .glasses p, .glasses ul li{
+    font-size: 15.5px;
+  }
+  .main-slide > div p,.main-slide > div li {
+    margin: 0px -30px;
+    font-size: 15px;
+    list-style-type: circle;
+  }
+  .main-slide img{
+    margin: 0 -30px;
+  }
+
+  /*------*/
+  .lowlevel_systems .main-slide > div{
+  padding: 160px 0 0 50px;
+  
+  }
+  .lowlevel_systems .main-slide > div > p{
+    font-size: 15px;
+    max-width: 250px;
+  }
+  .sidebar .system_uf h1{
+    font-size: 12px;
+  }
+  /*-------*/
+  .element_base{
+    margin-top: 90px;
+  }
+  .element_base_info{
+    display: block;
+    margin: 0 0 0 20px;
+  }
+  .element_base_info img{
+    margin: 0 auto
+  }
+  .element_base_info p{
+    margin: 0;
+    font-size: 18px;
+  }
+  .element_base table{
+    visibility: visible;
+    font-size: 11px;
+    margin: 10px 0;
+  }
+  /*---------*/
+  .medical  table{
+    visibility: visible;
+  }
+  .medical img{
+    width: 100%;
+  }
+  /*-------*/
+  .inertial_systems .sidebar > div img{
+    width: 100%;
+  }
+  .sidebar .cursovert > h1{
+    font-size: 15px;
+  }
+  .inertial_systems .main-slide  > div p{
+    max-width: 250px;
+  }
+  
+  /*-------*/
+  .modern_system img{
+    width: 350px;
+    height: 100%;
+  }
+  .sensors{
+    margin-bottom: 0;
+  }
+  .h3{
+    margin: 20px 0;
+  }
+  .h3 > p{
+    font-size: 15px; 
+  }
+
+  }
+  @media (max-width:1100px) and (min-width:800px){
+    .main-slide p, .main-slide li{
+      font-size: 15px ;
+      margin-top: 1px;
+    }
+    .main-slide table{
+      font-size: 14px;
+      margin: 0px;
+    }
+    .products .sidebar h1{
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 800px){
+    .sidebar h1{
+      font-size: 15px;
+    }
+    .sidebar img{
+      width: 130px;
+    }
+    .products p{
+      text-indent: 10px;
+      }
+    .products .main-slide > div{
+      padding: 80px 40px 0 80px;
+      overflow-y:scroll;
+      overflow-x: hidden;
+    }
+    
+    .products .main-slide > div img{
+      width: 190px;
+    }
+    .night_vision > section{
+      margin: 0;
+    }
+  }

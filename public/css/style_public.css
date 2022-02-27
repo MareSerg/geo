@@ -1,0 +1,114 @@
+.public{
+    margin: 10px auto;
+    width:95% ;
+}
+.public p{
+    padding-top: 10px;
+}
+.public li{
+    list-style-type:circle;
+}
+.public h2{
+    font-size: 20px;
+    font-weight:500;
+    background-color: rgb(179, 156, 133);
+    text-align: center;
+}
+/*----Статьи-----*/
+.articles{
+    margin: 10px auto;
+    width:95% ;
+}
+.articles p{
+    padding: 10px 0;
+}
+.articles li{
+    list-style-type:decimal ;
+    padding: 5px 0;
+}
+.articles img{
+    width: 250px;
+    height: 330px;
+}
+.articles_book{
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.articles img{
+    margin: 10px 50px;
+    border: 1px solid black;
+}
+/*----Конференции----*/
+
+.conferences_img{
+    max-width: 1600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.exh{
+    width: 350px;
+    height: 300px;
+}
+.award{
+    width: 350px;
+}
+.mdl{
+    width: 450px;
+}
+.conferences img{
+    margin: 10px 50px;
+}
+.conferences table, td ,tr{
+border: 1px solid black;
+}
+.conferences table{
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+.conferences p{
+    margin: 5px 0;
+}
+.people p{
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+}
+/*-----Статьи о компании------*/
+.articles_company{
+    width: 95%;
+    margin: 0 auto;
+}
+.articles_company p{
+    margin: 10px;
+    font-style: italic;
+}
+.articles_company a{
+    text-decoration:underline;
+    line-height: 30px;
+    color: rgb(71, 42, 15);
+}
+.articles_company a:hover{
+    font-size: 18px;
+    color:rgb(187, 143, 47);
+    transition: all 0.5s;
+}
+
+@media (max-width:800px){
+    .conferences table{
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 11.7px;
+    }
+    .conferences_img{
+        width: 100%;
+        margin: 0 -50px;
+    }
+    .articles li{
+        list-style-type:decimal ;
+        padding: 5px 0px;
+        margin: 0 7px;
+    }
+}

@@ -1,0 +1,87 @@
+.work{
+    width: 95%;
+    margin: 0 auto;
+}
+.work h2{
+    font-size: 20px;
+    font-weight:500;
+    background-color: rgb(179, 156, 133);
+    text-align: center;
+}
+.work p{
+    margin: 10px 0;
+}
+p.ul{
+    font-style: italic;
+    margin: 10 40px;
+    font-size: 18px;
+    text-indent: 0;
+}
+.we{
+    background: linear-gradient(90deg, rgb(187, 159, 135) 40%, rgb(56, 70, 97));
+    color: rgb(18, 32, 59);
+    height: 100px;
+}
+.we p{
+    padding: 30px;
+    font-size: 40px;
+}
+/*-----Кто работает?-----*/
+.work02 p{
+    
+    margin: 20px auto;
+    width: 70%;
+
+}
+/*----Кто учит?-----*/
+.work03{
+    width: 80%;
+    margin: 10px auto;
+    font-size: 18px;
+}
+.work03 h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/*----Вакансии-----*/
+.vacancs{
+    border: 5px solid rgb(179, 156, 133);
+    margin: 10px auto;
+    width: 85%;
+}
+p.vacancy{
+    font-weight: bold;
+    font-style: italic;
+}
+.vacancs p{
+    margin: 10px;
+    font-style: italic;
+}
+.vacancs ul > li{
+    list-style-type: circle;
+    margin: 5px 30px;
+}
+.vacancs ol > li{
+    list-style: disc;
+    margin: 5px 50px;
+}
+@media (max-width:800px){
+    .work{
+        width: 100%;
+    }
+    .work02 p{
+        margin: 10px auto;
+        width: 90%;
+    }
+    .work03{
+        width: 90%;
+        margin: 10px auto;
+        font-size: 18px;
+    }
+    .vacancs{
+        border: 5px solid rgb(179, 156, 133);
+        margin: 10px auto;
+        width: 95%;
+    }
+}
